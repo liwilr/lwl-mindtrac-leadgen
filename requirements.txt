@@ -1,0 +1,4 @@
+openpyxl>=3.1
+# Stores the Hunter / Apollo keys in the system keychain (Windows Credential Manager, macOS Keychain).
+# Without it, Windows falls back to a DPAPI-encrypted file in %APPDATA%\MindtracLeadGen.
+keyring>=25

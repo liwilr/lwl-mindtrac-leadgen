@@ -1,0 +1,36 @@
+# --- Secrets: never commit API keys -------------------------------------------------------------------------------
+.env
+.env.*
+*.key
+secrets*.json
+*.dpapi.json
+config.local.json
+
+# --- Lead data: lives in each computer's data folder, never in the repository --------------------------------------
+/LeadGen_Memory/
+/Database/
+/Queue/
+/LeadGen_Tools/queue/
+*.xlsx
+*.xls
+*.csv
+!**/*.example.csv
+research/
+records/
+ha_*/
+_api_cache/
+guard_snap.json
+progress.jsonl
+search_log.md
+
+# --- Python / OS ----------------------------------------------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude Code per-user files -------------------------------------------------------------------------------------
+.claude/settings.local.json
